@@ -12,8 +12,8 @@ html {
 
 
     .clock {
-      width: 25rem;
-      height: 25rem;
+      width: 15rem;
+      height: 15rem;
       border: 20px solid white;
       border-radius: 50%;
       margin: 50px auto;
@@ -25,6 +25,24 @@ html {
         inset 0 0 10px black,
         0 0 10px rgba(0,0,0,0.2);
     }
+
+@media screen and (max-width: 600px) {
+.clock {
+  width: 15rem;
+  height: 15rem;
+  border: 20px solid white;
+  border-radius: 50%;
+  margin: 50px auto;
+  position: relative;
+  padding: 2rem;
+  box-shadow:
+    0 0 0 4px rgba(0,0,0,0.1),
+    inset 0 0 0 3px #EFEFEF,
+    inset 0 0 10px black,
+    0 0 10px rgba(0,0,0,0.2);
+}
+}
+
 
     .clock-face {
       position: relative;
